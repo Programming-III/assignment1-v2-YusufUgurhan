@@ -11,7 +11,7 @@ public:
     Instructor();
     Instructor(string department, int experienceYears);
     ~Instructor();
-    virtual void display();
+    void display();
 };
 
 

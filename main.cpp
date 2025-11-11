@@ -9,13 +9,18 @@
 using namespace std;
 
 // ==================== Person Class Implementation =========================
-
+Person :: Person
 void Person::display() {
     cout<<"Name: "<<name<<endl;
     cout<<"Id: "<<id<<endl;
 }
 
 // ==================== Student Class Implementation ====================
+Student::Student(int year,string major) {
+        year =  yearLevel;
+        this ->major = major;
+    }
+
 void Student::display() {
         cout << "Name:" <<name <<endl;
         cout << "Year:" <<yearLevel << endl;

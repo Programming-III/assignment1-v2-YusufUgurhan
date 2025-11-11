@@ -9,7 +9,10 @@
 using namespace std;
 
 // ==================== Person Class Implementation =========================
-Person :: Person
+Person :: Person(int name,int id){
+this -> name = name;
+    this-> id = id;
+}
 void Person::display() {
     cout<<"Name: "<<name<<endl;
     cout<<"Id: "<<id<<endl;

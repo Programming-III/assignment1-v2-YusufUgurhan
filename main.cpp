@@ -70,7 +70,6 @@ cout << "Currently Enrolled:" << *students <<endl;
 
 // ==================== Main Function ====================
 int main() {
-   Course c = new Course();
     
     return 0;
 }

@@ -15,18 +15,19 @@ void Person::display() {
 }
 
 // ==================== Student Class Implementation ====================
-
-
-
-
+void Student::display() {
+        cout << "Name:" <<name <<endl;
+        cout << "Year:" <<yearLevel << endl;
+        cout << "Major:" << major<<endl;
+    }
 
 
 // ==================== Instructor Class Implementation ====================
-
-
-
-
-
+void Instructor::display() {
+        cout << "Name: Dr." <<name <<endl;
+        cout << "Department:" <<department << endl;
+        cout << "Experience:" << experienceYears<<endl;
+    }
 
 // ==================== Course Class Implementation ====================
 

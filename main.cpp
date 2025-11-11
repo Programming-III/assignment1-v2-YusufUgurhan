@@ -32,6 +32,11 @@ void Student::display() {
 
 
 // ==================== Instructor Class Implementation ====================
+Instructor::Instructor(string department, int experienceYears){ 
+    this-> department = department;
+    this-> experienceYears = experienceYears;
+    
+}
 void Instructor::display() {
         cout << "Name: Dr." <<name <<endl;
         cout << "Department:" <<department << endl;
@@ -39,7 +44,18 @@ void Instructor::display() {
     }
 
 // ==================== Course Class Implementation ====================
+Course::Course(string courseCode, string courseName, int maxStudents, Student *students, int currentStudents) {
 
+this-> courseCode = courseCode;
+this-> courseName = courseName;
+this-> maxStudents = maxStudents;
+    this-> students = students;
+this-> currentStudents = currentStudents;}
+
+    Course::addStudents(const Student& s) {
+    s+=1;
+        
+    }
 Course:: displayCourseInfo(){
 cout << "Course:" << courseCode <<"-"<< courseName<<endl;
 cout << "MaxStudents:" << maxStudents << endl;

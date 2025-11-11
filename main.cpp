@@ -9,13 +9,10 @@
 using namespace std;
 
 // ==================== Person Class Implementation =========================
-
-
-
-
-
-
-
+void Person::display() {
+    cout<<"Name: "<<name<<endl;
+    cout<<"Id: "<<id<<endl;
+}
 
 // ==================== Student Class Implementation ====================
 

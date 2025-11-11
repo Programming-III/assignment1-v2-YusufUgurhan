@@ -3,20 +3,16 @@
 
 #include <string>
 using namespace std;
+class Person {
 private:
-string name;
-int id;
+    string name;
+    int id;
 public:
-Person();
-Per
-
-
-
-
-
-
-
-
+    Person();
+    Person(string name, int id);
+    ~Person();
+    virtual void display();
+};
 
 
 

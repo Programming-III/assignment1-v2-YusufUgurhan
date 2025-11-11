@@ -9,6 +9,7 @@
 using namespace std;
 
 // ==================== Person Class Implementation =========================
+
 void Person::display() {
     cout<<"Name: "<<name<<endl;
     cout<<"Id: "<<id<<endl;
@@ -31,7 +32,12 @@ void Instructor::display() {
 
 // ==================== Course Class Implementation ====================
 
+Course:: displayCourseInfo(){
+cout << "Course:" << courseCode <<"-"<< courseName<<endl;
+cout << "MaxStudents:" << maxStudents << endl;
+cout << "Currently Enrolled:" << *students <<endl;    
 
+}
 
 
 
@@ -40,7 +46,7 @@ void Instructor::display() {
 
 // ==================== Main Function ====================
 int main() {
-   
+   Course c = new Course();
     
     return 0;
 }
